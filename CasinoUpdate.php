@@ -31,18 +31,18 @@ if(isset($_POST['submit'])) {
     echo "Casino Details Updated"; 
     
     }
+//    
+//    getNameFromId(){
+//        
+//    }
 }
-        
-    
-    
-
 
 ?>
 
 <!--   post updates to CasinoCreate. While sql can fetch the $result take the $id and populate the dropdown options with the various id's-->
 
    <form action="CasinoCreate.php" method="post">
-      <select name="" id="">
+      <select name="id" id="">
             <?php
              while($row = mysqli_fetch_assoc($result)) {
        $id = $row['id'];
@@ -54,7 +54,7 @@ if(isset($_POST['submit'])) {
       </select>
       <br>
        Casino Name:
-       <input type="varchar" name="name">
+       <input type="varchar" name="name" value="$id">
        <br>
        Casino Location:
        <input type="varchar" name="location">

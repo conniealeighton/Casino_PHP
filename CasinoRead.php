@@ -20,6 +20,9 @@
     while($row = mysqli_fetch_assoc($result)){
 
         print_r(mysqli_fetch_assoc($nameResult));
+        
+//        $nameResultArr = (mysqli_fetch_assoc($nameResult));
+//        echo json_encode($nameResultArr);
         ?>
         
         <br>
